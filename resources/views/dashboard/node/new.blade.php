@@ -222,28 +222,28 @@
     <script src="{{ asset('assets/vendor/validation-engine-master/js/jquery.validationEngine.js') }}"></script>
     <script src="{{ asset('assets/vendor/datetimepicker/build/jquery.datetimepicker.full.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/select2/js/select2.js') }}"></script>
-    <script>
-        $(document).ready(function () {
-            $("#newnode").validationEngine({promptPosition: "topLeft:0"});
+        <script>
+            $(document).ready(function () {
+                $("#newnode").validationEngine({promptPosition: "topLeft:0"});
 
-            $('.datetimepicker').datetimepicker({
-                timepicker:false,
-                format:'Y-m-d'
+                $('.datetimepicker').datetimepicker({
+                    timepicker:false,
+                    format:'Y-m-d'
+                });
+
+
+                  // $('.select2class').select2();
+                $("#country").select2({dropdownAutoWidth : true});
+                //  $("#catagory").select2({dropdownAutoWidth : true});
+                //$("#country").select2({ width: '100%' });
+                //$('.select2class').select2({width: 'resolve'});
+                $(".js-example-theme-multiple").select2({
+                    theme: "classic"
+                });
+
+
+
             });
-
-
-              // $('.select2class').select2();
-            $("#country").select2({dropdownAutoWidth : true});
-            //  $("#catagory").select2({dropdownAutoWidth : true});
-            //$("#country").select2({ width: '100%' });
-            //$('.select2class').select2({width: 'resolve'});
-            $(".js-example-theme-multiple").select2({
-                theme: "classic"
-            });
-
-
-
-        });
 
 
         $("#sponserid").bind("keyup  paste", function(e) {

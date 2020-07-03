@@ -12,6 +12,18 @@
 */
 
 Route::get('/', 'ClientController@index');
+Route::get('signup', 'ClientController@Signup');
+Route::post('signupsave', 'ClientController@SignupSave');
+//Route::post('paymentsuccess', 'ClientController@PaymentSuccess');
+Route::get('paymentsuccess', 'ClientController@PaymentSuccess');
+Route::get('test', 'ClientController@Test');
+
+// route for to show payment form using get method
+
+
+// route for make payment request using post method
+Route::post('dopayment', 'RazorpayController@dopayment')->name('dopayment');
+
 Route::get('catagory/{id}', 'ClientController@listCatagory');
 Route::get('listbuyer/{cid}/{catid}', 'ClientController@listBuyer');
 

@@ -11453,6 +11453,17 @@ img.mfp-img {
   vertical-align: middle;
   font-weight: 600; }
 
+    .w3l-pricing1 span.label.label-paysuccess {
+    background:#0C9A9A;
+    color:#FFFFDF;
+    font-size: 10px;
+    padding: 7px 20px;
+    border-radius: 55px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    font-weight: 600; }
+
 .w3l-pricing1 .card-body p {
   color: var(--text-color);
   font-weight: 400;
@@ -12414,15 +12425,18 @@ img.mfp-img {
   background-color: #fff; }
 
 .w3l-login .login-box {
-  background: url(../images/login.jpg) no-repeat 0px 0px;
-  background-size: cover;
-  height: 100vh;
+ /* background: url(../images/login.jpg) no-repeat 0px 0px;*/
+  /*background-size: cover;*/
+    background-color: #e6e6e6;
+
+
+  height: 200vh;
   display: grid;
   align-items: center; }
 
 @media (max-width: 500px) {
   .w3l-login .login-form {
-    width: 400px; } }
+    width: 600px; } }
 
 @media (max-width: 520px) {
   .w3l-login .login-form {

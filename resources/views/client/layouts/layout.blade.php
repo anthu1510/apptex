@@ -128,6 +128,7 @@
 
 
 <script src="{{ asset('assets/vendor/jquery-3.5.1.js') }}"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <!-- Bootstrap JS-->
 <script src="{{ asset('assets/vendor/bootstrap-4.1/popper.min.js') }}"></script>
 <script src="{{ asset('assets/vendor/bootstrap-4.1/bootstrap.min.js') }}"></script>
