@@ -14,12 +14,12 @@
     <!--<link rel="stylesheet" href="assets/css/style-liberty.css">-->
     <link href="{{ asset('assets/client/css/style-liberty.css') }}" rel="stylesheet" media="all">
     @yield('additional-css')
-</head>
+</head>r
 <body>
 <div class="w3l-bootstrap-header fixed-top">
     <nav class="navbar navbar-expand-lg navbar-light p-2">
         <div class="container">
-            <a class="navbar-brand" href="{{URL::to("/")}}"><span class="fa fa-diamond"></span>Market</a>
+            <a class="navbar-brand" href="{{URL::to("/")}}"><span class="fa fa-diamond"></span>Apptex</a>
             <!-- if logo is image enable this
           <a class="navbar-brand" href="#index.html">
               <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
@@ -50,7 +50,7 @@
                 </ul>
                 <div class="form-inline">
                     <a href="login.html" class="login mr-4">Log in</a>
-                    <a href="signup.html" class="btn btn-primary btn-theme">SIGN UP</a>
+                    <a href="{{URL::to("signup")}}" class="btn btn-primary btn-theme">SIGN UP</a>
                 </div>
             </div>
         </div>

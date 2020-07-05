@@ -51,13 +51,18 @@
 
         <div class="row">
             @foreach($country as $cnt)
-            <div class="col-lg-3">
-                <section class="w3l-career1 py-5 mt-5">
+            <div class="col-lg-2">
+                <section class="w3l-career1 py-3 mt-3">
+                   <center>  {{$cnt->country_name}}
                 <div class=" img-circle  d-md-block d-none">
                     <a href="{{URL::to("catagory/".$cnt->id)}}">
                     <img src="{{asset('assets/client/images/'.$cnt->icon_image )}}" class=" rounded" alt="{{$cnt->country_name}}" />
+
+
+
                     </a>
                 </div>
+                   </center>
                 </section>
             </div>
 

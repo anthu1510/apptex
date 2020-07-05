@@ -11,25 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f043efba-adfa-4925-8076-ea4b7ac0b070" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/client/payamount.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/client/payment_success.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/client/signup.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/client/css/style-liberty.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/client/css/style-liberty.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/logo/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/logo/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BuyerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BuyerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/client/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/layouts/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/node/new.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/node/new.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,8 +162,19 @@
       <workItem from="1593669469819" duration="630000" />
       <workItem from="1593670220932" duration="22160000" />
       <workItem from="1593758504949" duration="43000" />
-      <workItem from="1593760503307" duration="25733000" />
+      <workItem from="1593760503307" duration="26744000" />
+      <workItem from="1593839719840" duration="145000" />
+      <workItem from="1593933134078" duration="1086000" />
+      <workItem from="1593935258841" duration="426000" />
     </task>
+    <task id="LOCAL-00001" summary="SignUp form Created&#10;03-07-2020&#10;by&#10;Ravindran">
+      <created>1593786568200</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593786568200</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +217,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="SignUp form Created&#10;03-07-2020&#10;by&#10;Ravindran" />
+    <option name="LAST_COMMIT_MESSAGE" value="SignUp form Created&#10;03-07-2020&#10;by&#10;Ravindran" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="0" y="106" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593763250252">
       <screen x="0" y="27" width="1600" height="835" />
@@ -234,6 +234,10 @@
       <screen x="0" y="27" width="1600" height="835" />
     </state>
     <state x="429" y="73" width="732" height="749" key="#phpunit.xml/0.27.1600.835@0.27.1600.835" timestamp="1593778645953" />
+    <state x="339" y="27" width="912" height="835" key="CommitChangelistDialog2" timestamp="1593786567661">
+      <screen x="0" y="27" width="1600" height="835" />
+    </state>
+    <state x="339" y="27" width="912" height="835" key="CommitChangelistDialog2/0.27.1600.835@0.27.1600.835" timestamp="1593786567661" />
     <state x="571" y="188" width="447" height="520" key="FileChooserDialogImpl" timestamp="1593697057502">
       <screen x="0" y="27" width="1600" height="835" />
     </state>
@@ -270,6 +274,10 @@
       <screen x="0" y="27" width="1600" height="835" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.27.1600.835@0.27.1600.835" timestamp="1593606846739" />
+    <state x="395" y="180" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1593786581241">
+      <screen x="0" y="27" width="1600" height="835" />
+    </state>
+    <state x="395" y="180" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1600.835@0.27.1600.835" timestamp="1593786581241" />
     <state x="553" y="262" width="484" height="372" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1593780226665">
       <screen x="0" y="27" width="1600" height="835" />
     </state>
@@ -305,7 +313,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/client/index.blade.php</url>
-          <line>88</line>
+          <line>93</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

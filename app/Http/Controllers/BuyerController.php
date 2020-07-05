@@ -10,8 +10,12 @@ class BuyerController extends Controller
 {
     public function Create()
     {
-        $catagories=DB::table("catagory")->get();
-        $countries=DB::table("country")->get();
+        $catagories=DB::table("catagory")
+            ->get();
+        $countries=DB::table("country")
+            ->where('status','active')
+            ->orderBy("priority")
+            ->get();
 
 
         $data=['catagories'=>$catagories,
