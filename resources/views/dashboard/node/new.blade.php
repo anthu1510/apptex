@@ -58,7 +58,7 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label for="u_name"> Country </label>
-                            <select class="select2class form-control validate[required]" id="country" name="country" style="width: 100%"   >
+                            <select class="select2class form-control " id="country" name="country" style="width: 100%"   >
                                 @foreach($countries as $country)
                                 <option value="{{$country->id}}">{{$country->country_name}}</option>
                                 @endforeach
@@ -108,7 +108,7 @@
                             <label for="u_name"> Product Description </label>
 
                             <textarea  name="product_desc" id="product_desc"
-                                   class=" form-control validate[required]"
+                                   class=" form-control "
                                    value="" placeholder="Enter Product Description"
                                        data-errormessage-value-missing="Product Description is required!"> </textarea>
                         </div>
@@ -122,7 +122,7 @@
                             <label for="buyer_name"> Contact Person </label>
 
                             <input type="text" name="contact_person" id="contact_person"
-                                   class=" form-control validate[required]"
+                                   class=" form-control "
                                    value="" placeholder="Enter Contact Person"
                                    data-errormessage-value-missing="Contact Person is required!">
                         </div>
@@ -136,7 +136,7 @@
                             <label for="u_name"> Contact Address </label>
 
                             <textarea  name="contact_address" id="contact_address"
-                                       class=" form-control validate[required]"
+                                       class=" form-control "
                                        value="" placeholder=" Enter Contact Address"
                                        data-errormessage-value-missing="Contact Address is required!"> </textarea>
                         </div>
@@ -150,7 +150,7 @@
                             <label for="buyer_name"> Phone </label>
 
                             <input type="text" name="phone" id="phone"
-                                   class=" form-control validate[required]"
+                                   class=" form-control "
                                    value="" placeholder="Enter Phone"
                                    data-errormessage-value-missing="Phone is required!">
                         </div>
@@ -163,7 +163,7 @@
                             <label for="buyer_name"> Fax </label>
 
                             <input type="text" name="fax" id="fax"
-                                   class=" form-control validate[required]"
+                                   class=" form-control "
                                    value="" placeholder="Enter Fax"
                                    data-errormessage-value-missing="Fax is required!">
                         </div>
@@ -176,7 +176,7 @@
                             <label for="buyer_name"> Email </label>
 
                             <input type="text" name="email" id="email"
-                                   class=" form-control validate[required,custom[email]"
+                                   class=" form-control "
                                    value="" placeholder="Enter Email"
                                    data-errormessage-value-missing="Email is required!">
                         </div>
@@ -189,7 +189,7 @@
                             <label for="buyer_name"> Website </label>
 
                             <input type="text" name="website" id="website"
-                                   class=" form-control validate[required]"
+                                   class=" form-control "
                                    value="" placeholder="Enter Website"
                                    data-errormessage-value-missing="Website is required!">
                         </div>

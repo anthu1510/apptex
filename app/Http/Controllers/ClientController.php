@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\AttractMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
@@ -11,6 +12,8 @@ use Razorpay\Api\Errors\SignatureVerificationError;
 class ClientController extends Controller
 {
     public function index(){
+
+
         $country=DB::table('country')
             ->where('status','active')
             ->orderBy('priority')
@@ -292,6 +295,66 @@ class ClientController extends Controller
 
           return view('client.payment_success')->with($ret_data);
     }
+
+    public function Home()
+    {
+        return view("client.home");
+    }
+
+    public function Login()
+    {
+        return view("client.login");
+    }
+
+    public function About()
+    {
+        return view('client.about');
+    }
+    public function HowItWorks()
+    {
+        return view('client.howitworks');
+    }
+    public function Pricing()
+    {
+        return view('client.pricing');
+    }
+    public function Contact()
+    {
+        return view('client.contact');
+    }
+
+    public function SendMail()
+    {
+        echo "<pre>";
+        $res=\request()->all();
+       // print_r($res);exit;
+
+        $first_name=$res['first_name'];
+        $last_name=$res['last_name'];
+        $email_id=$res['email_id'];
+        $phone_no=$res['phone_no'];
+        $messagebody=$res['message'];
+
+        $data=[
+            'name'=> $first_name." ".$last_name,
+            'email'=>$email_id,
+            'phone_no'=>$phone_no,
+            'messagebody'=>$messagebody
+        ];
+
+
+
+        $newmail=new AttractMail();
+        $newmail->from_name="Apparel Importers Data";
+        $newmail->from_email="info@apparelimportersdata.com";
+        $newmail->to_name="$first_name  $last_name";
+        $newmail->to_email=$res['email_id'];
+        $newmail->subject="From Apparel Importers Data Contact us form";
+        $newmail->data=$data;
+        echo $newmail->html_email();
+
+    }
+
 
     public function Test()
     {

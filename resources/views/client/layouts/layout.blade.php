@@ -4,9 +4,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    @yield('title')
 
-    <title>Market a Corporate Category Bootstrap Responsive Website Template - Home </title>
-    <!-- web fonts -->
+    @yield('metta')
+
+
     <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
     <!-- //web fonts -->
@@ -19,7 +21,7 @@
 <div class="w3l-bootstrap-header fixed-top">
     <nav class="navbar navbar-expand-lg navbar-light p-2">
         <div class="container">
-            <a class="navbar-brand" href="{{URL::to("/")}}"><span class="fa fa-diamond"></span>Apptex</a>
+            <a class="navbar-brand" href="{{URL::to("/")}}"><img src="{{asset('assets/client/images/logo.png')}}"> </a>
             <!-- if logo is image enable this
           <a class="navbar-brand" href="#index.html">
               <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
@@ -32,25 +34,33 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="{{URL::to("/")}}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="{{URL::to("about")}}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">How It Works</a>
+                        <a class="nav-link" href="{{URL::to("how-it-work")}}">How It Works</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Pricing</a>
+                        <a class="nav-link" href="{{URL::to("pricing")}}">Pricing</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="{{URL::to("contact")}}">Contact</a>
                     </li>
                 </ul>
                 <div class="form-inline">
-                    <a href="login.html" class="login mr-4">Log in</a>
-                    <a href="{{URL::to("signup")}}" class="btn btn-primary btn-theme">SIGN UP</a>
+                    @if(isset( \App\Http\Controllers\SupplierController::getSupplier()->id))
+                        <p style="font-weight: bold;color:darkblue">
+                        Welcome : {{\App\Http\Controllers\SupplierController::getSupplier()->name}} &nbsp;&nbsp;&nbsp; </p>
+                        <a href="{{URL::to("clientlogout")}}" class="login mr-4">Log Out</a>
+                    @else
+                        <a href="clientlogin" class="login mr-4">Log in</a>
+                        <a href="{{URL::to("signup")}}" class="btn btn-primary btn-theme">SIGN UP</a>
+                    @endif
+
+
                 </div>
             </div>
         </div>
@@ -59,16 +69,50 @@
 </nav>
 </div>
 
-<div class="container">
-    <div class="row">
-        <section class=" py-5 mt-5">
-        </section>
-        <div class="col-lg-12 pt-5 mt-5">
-                 @yield('contents')
-        </div>
 
+                 @yield('contents')
+
+
+
+{{--<section class="w3l-index-block2 py-5">
+    <div class="container py-md-3">
+        <div class="heading text-center mx-auto">
+            <h3 class="head">We provide solutions to grow your business </h3>
+            <p class="my-3 head"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                Nulla mollis dapibus nunc, ut rhoncus
+                turpis sodales quis. Integer sit amet mattis quam.</p>
+        </div>
+        <div class="row bottom_grids pt-md-3">
+            <div class="col-lg-4 col-md-6 mt-5">
+                <div class="s-block">
+                    <a href="blog-single.html" class="d-block p-lg-4 p-3">
+                        <img src="assets/images/s1.png" alt="" class="img-fluid" />
+                        <h3 class="my-3">Global Network</h3>
+                        <p class="">Our goal is to help our companies maintain or achieve best in class positions. Build an online presence with this professional bootstrap 4 template.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-5">
+                <div class="s-block">
+                    <a href="blog-single.html" class="d-block p-lg-4 p-3">
+                        <img src="assets/images/s2.png" alt="" class="img-fluid" />
+                        <h3 class="my-3">High Benefits</h3>
+                        <p class="">Our goal is to help our companies maintain or achieve best in class positions. Build an online presence with this professional bootstrap 4 template.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-5">
+                <div class="s-block">
+                    <a href="blog-single.html" class="d-block p-lg-4 p-3">
+                        <img src="assets/images/s3.png" alt="" class="img-fluid" />
+                        <h3 class="my-3">Partnership</h3>
+                        <p class="">Our goal is to help our companies maintain or achieve best in class positions. Build an online presence with this professional bootstrap 4 template.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+</section>--}}
 
 <!-- footer-28 block -->
 <section class="w3l-market-footer">
@@ -87,7 +131,7 @@
 
         <div class="midd-footer-28 align-center py-lg-4 py-3 mt-5">
             <div class="container">
-                <p class="copy-footer-28 text-center"> &copy; 2020 Market. All Rights Reserved.</p>
+                <p class="copy-footer-28 text-center"> ApparelImportersData.com. All Rights Reserved</p>
             </div>
         </div>
         </div>

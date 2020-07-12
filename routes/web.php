@@ -10,12 +10,35 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'ClientController@Home');
+Route::get('about', 'ClientController@About');
+Route::get('how-it-work', 'ClientController@HowItWorks');
+Route::get('pricing', 'ClientController@Pricing');
+Route::get('contact', 'ClientController@Contact');
+Route::get('clientlogin', 'ClientController@Login');
+Route::post('clientlogincheck', 'SupplierController@Login');
+Route::get('clientlogout', 'SupplierController@ClientLogOut');
+Route::get('sendhtmlemail','MailController@html_email');
+Route::post('sendmail', 'ClientController@SendMail');
 
-Route::get('/', 'ClientController@index');
+
+// Client Auth Route
+Route::middleware(['client.auth'])->group(function () {
+    Route::get('countrylist', 'ClientController@index');
+    Route::get('catagory/{id}', 'ClientController@listCatagory');
+    Route::get('listbuyer/{cid}/{catid}', 'ClientController@listBuyer');
+    Route::get('buyerserverside/{cid}/{catid}', 'BuyerController@BuyerServerSideFilter');
+    Route::post('buyerview', 'BuyerController@viewBuyer');
+});
+
+//Route::get('countrylist', 'ClientController@index')->middleware('clientauth');
+
+
+
 Route::get('signup', 'ClientController@Signup');
 Route::post('signupsave', 'ClientController@SignupSave');
 //Route::post('paymentsuccess', 'ClientController@PaymentSuccess');
-Route::get('paymentsuccess', 'ClientController@PaymentSuccess');
+Route::post('paymentsuccess', 'ClientController@PaymentSuccess');
 Route::get('test', 'ClientController@Test');
 
 // route for to show payment form using get method
@@ -24,8 +47,8 @@ Route::get('test', 'ClientController@Test');
 // route for make payment request using post method
 Route::post('dopayment', 'RazorpayController@dopayment')->name('dopayment');
 
-Route::get('catagory/{id}', 'ClientController@listCatagory');
-Route::get('listbuyer/{cid}/{catid}', 'ClientController@listBuyer');
+//Route::get('catagory/{id}', 'ClientController@listCatagory');
+//Route::get('listbuyer/{cid}/{catid}', 'ClientController@listBuyer');
 
 Route::get('buyerserverside/{cid}/{catid}', 'BuyerController@BuyerServerSideFilter');
 Route::post('buyerview', 'BuyerController@viewBuyer');
