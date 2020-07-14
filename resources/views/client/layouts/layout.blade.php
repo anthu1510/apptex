@@ -55,6 +55,8 @@
                         <p style="font-weight: bold;color:darkblue">
                         Welcome : {{\App\Http\Controllers\SupplierController::getSupplier()->name}} &nbsp;&nbsp;&nbsp; </p>
                         <a href="{{URL::to("clientlogout")}}" class="login mr-4">Log Out</a>
+                        <p style="font-weight: bold;color:deeppink">
+                            Your Login Expired in[{{ date_diff(date_create(\App\Http\Controllers\SupplierController::getSupplier()->validity_date),date_create(date('Y-m-d')))->format("%a") }}] Day/s</p>
                     @else
                         <a href="clientlogin" class="login mr-4">Log in</a>
                         <a href="{{URL::to("signup")}}" class="btn btn-primary btn-theme">SIGN UP</a>

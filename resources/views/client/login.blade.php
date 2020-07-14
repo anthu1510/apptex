@@ -13,6 +13,14 @@
     <!-- Template CSS -->
 
     <link href="{{ asset('assets/client/css/style-liberty.css') }}" rel="stylesheet" media="all">
+    <style>
+        .w3l-login .login-box {
+            background: url({{asset('assets/client/images/login.jpg')}}) no-repeat 0px 0px;
+            background-size: cover;
+            height: 100vh;
+            display: grid;
+            align-items: center; }
+    </style>
 </head>
 <body>
 <section class="w3l-login">

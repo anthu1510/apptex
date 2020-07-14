@@ -1,7 +1,13 @@
 @extends('client.layouts.layout')
+@section('title')
+    <title> Apparel Importers Data Buyers</title>
+@endsection
 @section('contents')
-
     <div class="row">
+        <section class=" py-5 mt-5">
+        </section>
+        <div class="col-lg-12 pt-5 mt-5">
+
         <div class="col-md-12">
             <!-- DATA TABLE -->
             <table id="buyertable"   class="table  table-striped table-bordered responsive nowrap">
@@ -9,24 +15,26 @@
                 <tr>
                     <th width="5%">#</th>
 
-                    <th width="5%">Country</th>
-                    <th>Name</th>
-                    <th>Contact</th>
+                    {{--<th width="5%">Country</th>--}}
+                    <th width="20%">Buyer Name</th>
+                    <th width="70%">Products</th>
+                    {{--<th>Contact</th>
                     <th>Phone</th>
                     <th>Fax</th>
-                    <th>Email</th>
+                    <th>Email</th>--}}
                     <th width="8%">Action</th>
                 </tr>
                 </thead>
                 <tfoot>
                 <tr>
                     <th width="5%">#</th>
-                    <th width="5%">Country</th>
-                    <th>Name</th>
-                    <th>Contact</th>
+                    {{--<th width="5%">Country</th>--}}
+                    <th width="20%">Name</th>
+                    <th width="70%">Products</th>
+                    {{--<th>Contact</th>
                     <th>Phone</th>
                     <th>Fax</th>
-                    <th>Email</th>
+                    <th>Email</th>--}}
                     <th width="8%">Action</th>
                 </tr>
                 </tfoot>
@@ -35,6 +43,8 @@
 
             </div>
             <!-- END DATA TABLE -->
+        </div>
+
         </div>
     </div>
     @include('client.model_buyer')
@@ -84,12 +94,13 @@
                     }
                 },
 
-                { data: 'country' },
+               /* { data: 'country' },*/
                 { data: 'buyername' },
-                { data: 'contct_person' },
+                { data: 'catagory' },
+               /* { data: 'contct_person' },
                 { data: 'phone' },
                 { data: 'fax' },
-                { data: 'email' },
+                { data: 'email' },*/
                 {
                     targets: 7,
                     data: null,

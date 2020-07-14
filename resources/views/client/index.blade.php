@@ -1,5 +1,9 @@
 @extends('client.layouts.layout')
 
+@section('title')
+    <title> Apparel Importers Data Country List</title>
+@endsection
+
 @section('contents')
 
 
@@ -44,7 +48,10 @@
             </div>
         </div>
     </section>--}}
-
+    <div class="row">
+        <section class=" py-5 mt-5">
+        </section>
+        <div class="col-lg-12 pt-5 mt-5">
 
 
 
@@ -90,7 +97,8 @@
             </div>--}}
         </div>
 
-
+        </div>
+    </div>
 
 
 

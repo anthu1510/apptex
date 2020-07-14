@@ -127,19 +127,18 @@ class BuyerController extends Controller
         if($country_id && $cat_id)
         {
             $qry="select b.id as id, c.country_name as country,
-                                                       GROUP_CONCAT(cat.catagory_desc) as catagory,
-                                                       b.buyer_name as buyername,
-                                                       b.desc as product_desc,
-                                                       b.contact_person as contct_person,
-                                                       b.phone as phone,
-                                                       b.fax as fax,
-                                                       b.email as email
-                                                FROM buyers b
-                                                    JOIN country c ON b.country_id = c.id
-                                                    JOIN catagory cat ON find_in_set(cat.id, b.catagory_id )
-                                                    WHERE c.id=$country_id and cat.id=$cat_id
-                                                    GROUP BY b.id,c.country_name,buyer_name,b.desc,b.contact_person,b.phone,b.fax,b.email
-                                                    ";
+                           GROUP_CONCAT(cat.catagory_desc) as catagory,
+                           b.buyer_name as buyername,
+                           b.desc as product_desc,
+                           b.contact_person as contct_person,
+                           b.phone as phone,
+                           b.fax as fax,
+                           b.email as email
+                    FROM buyers b
+                             JOIN country c ON b.country_id = c.id
+                             JOIN catagory cat ON find_in_set(cat.id, b.catagory_id )
+                    WHERE c.id=$country_id and find_in_set($cat_id,b.catagory_id)
+                    GROUP BY b.id,c.country_name,buyer_name,b.desc,b.contact_person,b.phone,b.fax,b.email";
         }else
         {
             $qry="select b.id as id,

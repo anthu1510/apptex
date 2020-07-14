@@ -21,7 +21,7 @@
     <div class="login-box">
         <div class="container">
             <div class="logo text-center mb-3">
-                <a class="navbar-brand" href="{{URL::to('/')}}"></span>AppTex</a>
+                <a class="navbar-brand" href="{{URL::to("/")}}"><img src="{{asset('assets/client/images/logo.png')}}"> </a>
                 <!-- if logo is image enable this
         <a class="navbar-brand" href="#index.html">
             <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
