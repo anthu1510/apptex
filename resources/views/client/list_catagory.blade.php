@@ -29,6 +29,20 @@
     </div>
 @endsection
 
+@section('footer-content')
+<p align="left" style="line-height: 1.8; margin-top: 2; margin-bottom: 2" dir="ltr">
+<font face="Arial" color="#00005B" size="4">Get Instant Enquiries from Buyers</font><font face="Arial" size="5" color="#00005B"><br>
+</font><span style="letter-spacing: normal; background-color: #FFFFFF">
+<font face="Nunito, sans-serif" style="font-size: 11pt" color="#333333">By 
+Sending Brief Business Profiles with High Quality Product Photos will gives high 
+impact on you.</font></span></p>
+<p align="left" style="line-height: 1.8; margin-top: 2; margin-bottom: 2">&nbsp;</p>
+@endsection
+
+
+
+
+
 {{--
 
 <a href="{{URL::to("listbuyer/".$country_id."/".$cat->catid ) }}">

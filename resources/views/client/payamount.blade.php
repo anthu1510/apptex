@@ -16,12 +16,14 @@
                     </div>
                     <div class="card-body p-0">
                         <h1 class="card-title pricing-card-title my-price-title">$0<small class="text-dull">/month</small></h1>
-                        <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                        <p>Connect with decision makers before your competitors do.</p>
                         <ul class="list-unstyled list-pricing mt-3 mb-4">
-                            <li>10 users included</li>
-                            <li>2 GB of storage</li>
-                            <li>Email support</li>
-                            <li>Help center access</li>
+                            <li>100% Email Verified</li>
+                            <li>100% Satisfaction Guarantee</li>
+                            <li>~300 Data's per month</li>
+                            <li>~75 data's weekly update</li>
+                            <li>Start Promoting Instantly</li>
+                            <li>30days Validity</li>
                         </ul>
                         <div class="text-center mt-4">
                             <a href="signup.html" class="btn btn-lg btn-outline-primary btn-outline-theme">Sign up for free</a>
@@ -32,16 +34,17 @@
             <div class=" offset-4 col-md-4">
                 <div class="mt-5 price-card price-card2 p-lg-4 p-md-3 p-4 recomemded-price">
                     <div class="card-header p-0 card-heading">
-                        <h4 class="mb-4">Payment {{--<span class="label label-popular">Popular</span>--}}</h4>
+                        <h3 class="mb-4">Payment {{--<span class="label label-popular">Popular</span>--}}</h3>
                     </div>
                     <div class="card-body p-0">
-                        <h1 class="card-title pricing-card-title my-price-title">₹ {{$data['amount']}}<small class="text-dull">/month</small></h1>
-                        <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                        <h1 class="card-title pricing-card-title my-price-title">₹ {{$data['amount']}}<small class="text-dull">/-</small></h1>
+                        <p>Connect with decision makers before your competitors do.</p>
                         <ul class="list-unstyled list-pricing mt-3 mb-4">
-                            <li>20 users included</li>
-                            <li>10 GB of storage</li>
-                            <li>Priority email support</li>
-                            <li>Help center access</li>
+                            <li>100% Email Verified</li>
+                            <li>100% Satisfaction Guarantee</li>
+                            <li>~300 Data's per month</li>
+                            <li>~75 data's weekly update</li>
+                            <li>30days Validity</li>
                         </ul>
                         <div class="text-center mt-4">
                             <form action="{{URL::to('paymentsuccess')}}" method="POST">

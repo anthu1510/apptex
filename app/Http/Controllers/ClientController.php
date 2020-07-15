@@ -355,6 +355,43 @@ class ClientController extends Controller
 
     }
 
+    public function saveContact()
+    {
+        $req=\request()->all();
+        $first_name=$req['first_name'];
+        $last_name=$req['last_name'];
+        $email_id=$req['email_id'];
+        $phone_no=$req['phone_no'];
+        $messagebody=$req['message'];
+        $data=[
+            'first_name'=>$first_name ,
+            'last_name'=>$last_name,
+            'email_id'=>$email_id,
+            'phone_no'=>$phone_no,
+            'messge'=>$messagebody,
+
+        ];
+
+    $res= DB::table('enquiry_form')->insert($data);
+        return view("client.enqiry");
+
+
+    }
+
+
+    public function TermsOfUse()
+    {
+        return view("client.terms_of_use");
+    }
+   public function RefundPolicy()
+    {
+        return view("client.refund_policy");
+    }
+    public function PrivacyStatement()
+    {
+        return view("client.refund_policy");
+    }
+
 
     public function Test()
     {
@@ -370,6 +407,7 @@ class ClientController extends Controller
         $validity_date= date_format($start_date,"Y-m-d");
         print_r($validity_date);
     }
+
 
 
 

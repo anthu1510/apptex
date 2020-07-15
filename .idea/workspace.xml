@@ -10,16 +10,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f043efba-adfa-4925-8076-ea4b7ac0b070" name="Default Changelist" comment="Final &#10;12-07-2020&#10;by&#10;Ravindran">
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/login.jpg" afterDir="false" />
+    <list default="true" id="f043efba-adfa-4925-8076-ea4b7ac0b070" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/client.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/client/enqiry.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/client/privacy.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/client/refund_policy.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/client/terms_of_use.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BuyerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BuyerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/client.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/client/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/client/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/layouts/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/client/list_buyer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/list_buyer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/client/list_catagory.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/list_catagory.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/client/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/model_buyer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/model_buyer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/payamount.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/payamount.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/payment_success.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/payment_success.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/pricing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/pricing.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/client/signup.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/signup.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +157,9 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/client" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/client/layouts" />
     </key>
@@ -184,7 +199,10 @@
       <workItem from="1594557050560" duration="15176000" />
       <workItem from="1594624715506" duration="71000" />
       <workItem from="1594626337289" duration="403000" />
-      <workItem from="1594732121763" duration="3658000" />
+      <workItem from="1594732121763" duration="3715000" />
+      <workItem from="1594791674161" duration="11000" />
+      <workItem from="1594791692207" duration="3813000" />
+      <workItem from="1594801487357" duration="3755000" />
     </task>
     <task id="LOCAL-00001" summary="SignUp form Created&#10;03-07-2020&#10;by&#10;Ravindran">
       <created>1593786568200</created>
@@ -214,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594575846345</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Final &#10;14-07-2020&#10;by&#10;Ravindran">
+      <created>1594735822091</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1594735822091</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +286,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="SignUp form Created&#10;03-07-2020&#10;by&#10;Ravindran" />
     <MESSAGE value="Final &#10;12-07-2020&#10;by&#10;Ravindran" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final &#10;12-07-2020&#10;by&#10;Ravindran" />
+    <MESSAGE value="Final &#10;14-07-2020&#10;by&#10;Ravindran" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final &#10;14-07-2020&#10;by&#10;Ravindran" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="106" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593763250252">
@@ -277,15 +303,15 @@
       <screen x="0" y="27" width="1600" height="835" />
     </state>
     <state x="429" y="73" width="732" height="749" key="#phpunit.xml/0.27.1600.835@0.27.1600.835" timestamp="1593778645953" />
-    <state x="289" y="27" width="912" height="703" key="CommitChangelistDialog2" timestamp="1594575866296">
-      <screen x="0" y="27" width="1366" height="703" />
-    </state>
-    <state x="289" y="27" width="912" height="703" key="CommitChangelistDialog2/0.27.1366.703@0.27.1366.703" timestamp="1594575866296" />
-    <state x="339" y="27" width="912" height="835" key="CommitChangelistDialog2/0.27.1600.835@0.27.1600.835" timestamp="1593786567661" />
-    <state x="571" y="188" width="447" height="520" key="FileChooserDialogImpl" timestamp="1593697057502">
+    <state x="339" y="27" width="912" height="703" key="CommitChangelistDialog2" timestamp="1594735821836">
       <screen x="0" y="27" width="1600" height="835" />
     </state>
-    <state x="571" y="188" width="447" height="520" key="FileChooserDialogImpl/0.27.1600.835@0.27.1600.835" timestamp="1593697057502" />
+    <state x="289" y="27" width="912" height="703" key="CommitChangelistDialog2/0.27.1366.703@0.27.1366.703" timestamp="1594575866296" />
+    <state x="339" y="27" width="912" height="835" key="CommitChangelistDialog2/0.27.1600.835@0.27.1600.835" timestamp="1594735821836" />
+    <state x="571" y="188" width="447" height="520" key="FileChooserDialogImpl" timestamp="1594805020247">
+      <screen x="0" y="27" width="1600" height="835" />
+    </state>
+    <state x="571" y="188" width="447" height="520" key="FileChooserDialogImpl/0.27.1600.835@0.27.1600.835" timestamp="1594805020247" />
     <state x="551" y="326" width="497" height="243" key="Github.ShareDialog" timestamp="1593697129637">
       <screen x="0" y="27" width="1600" height="835" />
     </state>
@@ -318,19 +344,19 @@
       <screen x="0" y="27" width="1600" height="835" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.27.1600.835@0.27.1600.835" timestamp="1593606846739" />
-    <state x="337" y="156" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1594575915478">
-      <screen x="0" y="27" width="1366" height="703" />
+    <state x="395" y="180" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1594735831482">
+      <screen x="0" y="27" width="1600" height="835" />
     </state>
     <state x="337" y="156" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.703@0.27.1366.703" timestamp="1594575915478" />
-    <state x="395" y="180" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1600.835@0.27.1600.835" timestamp="1593786581241" />
+    <state x="395" y="180" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1600.835@0.27.1600.835" timestamp="1594735831482" />
     <state x="553" y="262" width="484" height="372" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1593780226665">
       <screen x="0" y="27" width="1600" height="835" />
     </state>
     <state x="553" y="262" width="484" height="372" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.27.1600.835@0.27.1600.835" timestamp="1593780226665" />
-    <state x="85" y="139" width="658" height="623" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1593784326180">
+    <state x="85" y="139" width="658" height="623" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1594804186751">
       <screen x="0" y="27" width="1600" height="835" />
     </state>
-    <state x="85" y="139" width="658" height="623" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.27.1600.835@0.27.1600.835" timestamp="1593784326180" />
+    <state x="85" y="139" width="658" height="623" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.27.1600.835@0.27.1600.835" timestamp="1594804186751" />
     <state x="100" y="127" width="1400" height="635" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1594626453007">
       <screen x="0" y="27" width="1600" height="835" />
     </state>
@@ -344,10 +370,10 @@
       <screen x="0" y="27" width="1366" height="703" />
     </state>
     <state x="0" y="27" width="620" height="703" key="find.popup/0.27.1366.703@0.27.1366.703" timestamp="1594566806940" />
-    <state x="464" y="197" key="run.anything.popup" timestamp="1593679582585">
+    <state x="464" y="197" key="run.anything.popup" timestamp="1594804808283">
       <screen x="0" y="27" width="1600" height="835" />
     </state>
-    <state x="464" y="197" key="run.anything.popup/0.27.1600.835@0.27.1600.835" timestamp="1593679582585" />
+    <state x="464" y="197" key="run.anything.popup/0.27.1600.835@0.27.1600.835" timestamp="1594804808283" />
     <state x="463" y="183" width="672" height="678" key="search.everywhere.popup" timestamp="1593781685353">
       <screen x="0" y="27" width="1600" height="835" />
     </state>
@@ -367,7 +393,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/client/index.blade.php</url>
-          <line>101</line>
+          <line>100</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">

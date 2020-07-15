@@ -1,6 +1,6 @@
 @extends('client.layouts.layout')
 @section('title')
-    <title> Apparel Importers Data Buyers</title>
+    <title> Apparel Importers Data - Buyers Profile</title>
 @endsection
 @section('contents')
     <div class="row">
@@ -95,7 +95,15 @@
                 },
 
                /* { data: 'country' },*/
-                { data: 'buyername' },
+                { data: 'buyername',
+                    render: function (data) {
+
+                        return '<span style="cursor: pointer" id="btnpriority" >'+ data+'</span>';
+                    }
+
+
+
+                },
                 { data: 'catagory' },
                /* { data: 'contct_person' },
                 { data: 'phone' },
@@ -135,6 +143,15 @@
             Edit(data.id);
         } );
 
+        $('#buyertable tbody').on( 'click', '#btnpriority', function () {
+            var current_row = $(this).parents('tr');//Get the current row
+            if (current_row.hasClass('child')) {//Check if the current row is a child row
+                current_row = current_row.prev();//If it is, then point to the row before it (its 'parent')
+            }
+            var data = table.row(current_row).data();//At this point, current_row refers to a valid row in the table, whether is a child row (collapsed by the DataTable's responsiveness) or a 'normal' row
+            Edit(data.id);
+        } );
+
 
 
 
@@ -165,3 +182,13 @@
 </script>
 
 @endsection
+@section('footer-content')
+<p align="left" style="line-height: 1.8; margin-top: 2; margin-bottom: 2" dir="ltr">
+<font face="Arial" color="#00005B" size="4">Get Instant Enquiries from Buyers</font><font face="Arial" size="5" color="#00005B"><br>
+</font><span style="letter-spacing: normal; background-color: #FFFFFF">
+<font face="Nunito, sans-serif" style="font-size: 11pt" color="#333333">By
+Sending Brief Business Profiles with High Quality Product Photos will gives high
+impact on you.</font></span></p>
+<p align="left" style="line-height: 1.8; margin-top: 2; margin-bottom: 2">&nbsp;</p>
+@endsection
+

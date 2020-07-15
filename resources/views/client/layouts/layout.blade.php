@@ -49,14 +49,22 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{URL::to("contact")}}">Contact</a>
                     </li>
+                     @if(isset( \App\Http\Controllers\SupplierController::getSupplier()->id))
+                    
+                      <li class="nav-item">
+                        <a class="nav-link" href="{{URL::to("countrylist")}}"> <p style="color:#9d0055">My Account </p> </a>
+                    </li>
+                    
+                     @endif
+                    
                 </ul>
                 <div class="form-inline">
                     @if(isset( \App\Http\Controllers\SupplierController::getSupplier()->id))
                         <p style="font-weight: bold;color:darkblue">
                         Welcome : {{\App\Http\Controllers\SupplierController::getSupplier()->name}} &nbsp;&nbsp;&nbsp; </p>
                         <a href="{{URL::to("clientlogout")}}" class="login mr-4">Log Out</a>
-                        <p style="font-weight: bold;color:deeppink">
-                            Your Login Expired in[{{ date_diff(date_create(\App\Http\Controllers\SupplierController::getSupplier()->validity_date),date_create(date('Y-m-d')))->format("%a") }}] Day/s</p>
+                        <p style="font-weight: bold;color:darkblue">
+                             Expired in[{{ date_diff(date_create(\App\Http\Controllers\SupplierController::getSupplier()->validity_date),date_create(date('Y-m-d')))->format("%a") }}] Day/s</p>
                     @else
                         <a href="clientlogin" class="login mr-4">Log in</a>
                         <a href="{{URL::to("signup")}}" class="btn btn-primary btn-theme">SIGN UP</a>
@@ -123,7 +131,7 @@
             <div class="container py-lg-3">
                 <div class="row footer-top-28">
                     <div class="col-md-6 footer-list-28 mt-5">
-
+                        @yield('footer-content')
                     </div>
                 </div>
             </div>
@@ -288,3 +296,12 @@
 
 </body>
 </html>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172066535-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-172066535-1');
+          </script>

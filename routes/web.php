@@ -20,6 +20,10 @@ Route::post('clientlogincheck', 'SupplierController@Login');
 Route::get('clientlogout', 'SupplierController@ClientLogOut');
 Route::get('sendhtmlemail','MailController@html_email');
 Route::post('sendmail', 'ClientController@SendMail');
+Route::post('savecontact', 'ClientController@saveContact');
+Route::get('termsandcondition', 'ClientController@TermsOfUse');
+Route::get('refundpolicy', 'ClientController@RefundPolicy');
+Route::get('privacy', 'ClientController@PrivacyStatement');
 
 
 // Client Auth Route

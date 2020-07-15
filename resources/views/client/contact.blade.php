@@ -9,7 +9,7 @@
     <meta name="keywords" content="europe garment buyers database,apparel importers france,garment buyers sweden,germany garment importers,uk importers,usa textile importers/>
 @endsection
 @section('contents')
-        <form action="{{ URL::to('sendmail') }}" method="post" id="newnode">
+        <form action="{{ URL::to('savecontact') }}" method="post" id="newnode">
     @csrf
     <section class="w3l-contact mt-5" >
         <div class="contacts-9 py-5 mt-5">

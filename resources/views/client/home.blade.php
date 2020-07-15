@@ -28,7 +28,6 @@
 @endsection
 
 @section('contents')
-
     <div class="w3l-index-block1">
         <div class="content py-5">
             <div class="container">
@@ -44,21 +43,21 @@
                     </div>
                 </div>
                 <div class="clear"></div>
-            </div>
-        </div>
+         </div>
+         </div>
     </div>
     <!-- //index-block1 -->
     <!-- index-block2 -->
     <section class="w3l-index-block2 py-5">
         <div class="container py-md-3">
             <div class="heading text-center mx-auto" style="width: 1400; height: 124">
-                <h3 class="head" dir="ltr"><font style="font-size: 20pt">Worldwide Apparel
-                        Buyers Directory</font></h3>
+                <h3 class="head" dir="ltr"><font style="font-size: 20pt">Worldwide Active Apparel
+                        Buyers Profile</font></h3>
                 <p class="head" dir="ltr">&nbsp;</p>
                 <img src="{{asset('assets/client/images/buyers-flags.jpg')}}" class="img-fluid" alt="main image" width="1400" height="124"><p>&nbsp;</p>
             </div>
             <h3 class="head" style="text-align: center"><font style="font-size: 16pt">
-                    Apparel Buyers for</font></h3>
+                    Buyers Looking for</font></h3>
             <br>
             <div align="center">
                 <center>
@@ -81,7 +80,7 @@
                         </tr>
                         <tr>
                             <td width="33%" height="40"><span style="font-size: 11pt">&nbsp;
-            Under Garments / Sleep Wears</span></td>
+            Under Garments / Sleep Wears / Lingerie</span></td>
                             <td width="33%" height="40">
                                 <p dir="ltr"><span style="font-size: 11pt">&nbsp; Readymade Garments</span></td>
                             <td width="33%" height="40">
@@ -94,7 +93,7 @@
                             <td width="33%" height="24" dir="ltr"><span style="font-size: 11pt">&nbsp;
             Jeans/Denims</span></td>
                             <td width="33%" height="24" dir="ltr"><span style="font-size: 11pt">&nbsp;
-            Lingerie</span></td>
+            Home Textiles</span></td>
                         </tr>
                     </table>
                 </center>
@@ -103,7 +102,7 @@
             <section class="w3l-index-block2 py-5">
                 <div class="container py-md-3">
                     <div class="heading text-center mx-auto">
-                        <a href="login.html" class="btn btn-primary btn-theme">Click for Apparel Buyers</a>
+                        <a href="pricing" class="btn btn-primary btn-theme">Apparel Buyers Profile Just for 27$ - Signup </a>
                     </div>
                     <div class="row bottom_grids pt-md-3">
                         <div class="col-lg-4 col-md-6 mt-5">

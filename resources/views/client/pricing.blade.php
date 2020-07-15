@@ -20,22 +20,20 @@
                 <div class="col-md-4">
                     <div class="mt-5 price-card price-card1 p-lg-4 p-md-3 p-4">
                         <div class="card-header p-0 card-heading">
-                            <h4 class="mb-4">Standard</h4>
-                        </div>
+                            <h4 class="mb-4">Standard <span class="label label-popular">Standard</span></h4>                        </div>
                         <div class="card-body p-0">
-                            <h1 class="card-title pricing-card-title my-price-title">$20<small class="text-dull">/month</small></h1>
+                            <h1 class="card-title pricing-card-title my-price-title">$27<small class="text-dull">/-</small></h1>
                             <p>Connect with decision makers before your competitors do.</p>
                             <ul class="list-unstyled list-pricing mt-3 mb-4">
-                                <li><font size="3">30 days Validity</font></li>
-                                <li><font size="3">100% Email Verified </font>
-                                <li><font size="3">~ 300 data's per month</font></li>
-                                <li><font size="3">~ 70 data's every week update</font></li>
-                                <li><font size="3">100% Satisfaction Guarantee</font></li>
-                                <li><font size="3">Instant Access</font></li>
+                                <li><font size="3">100% Email Verified</font></li>
+                                <li><font size="3">100% Satisfaction Guarantee</font>
+                                <li><font size="3">~ 300 Data's per month</font></li>
+                                <li><font size="3">~ 75 data's weekly update</font></li>
+                                <li><font size="3">Start Promoting Instantly</font></li>
+                                <li><font size="3">30days Validity</font></li>
                             </ul>
                             <div class="text-center mt-4">
-                                <a href="{{URL::to("signup")}}" class="btn btn-lg btn-outline-primary btn-outline-theme">
-                                    Sign up for Standard</a>
+                                <a href="{{URL::to("signup")}}" class="btn btn-lg btn-primary btn-theme">Sign Up to Instant Access</a>
                             </div>
                         </div>
                     </div>
@@ -43,21 +41,21 @@
                 <div class="col-md-4">
                     <div class="mt-5 price-card price-card2 p-lg-4 p-md-3 p-4 recomemded-price">
                         <div class="card-header p-0 card-heading">
-                            <h4 class="mb-4">Premium <span class="label label-popular">Premium</span></h4>
+                            <h4 class="mb-4">Premium</h4>
                         </div>
                         <div class="card-body p-0">
-                            <h1 class="card-title pricing-card-title my-price-title">$35<small class="text-dull">/-</small></h1>
+                            <h1 class="card-title pricing-card-title my-price-title">$45<small class="text-dull">/-</small></h1>
                             <p>Connect with decision makers before your competitors do.</p>
                             <ul class="list-unstyled list-pricing mt-3 mb-4">
+                                <li><font size="3">100% Email Verified</font></li>
+                                <li><font size="3">100% Satisfaction Guarantee</font>
+                                <li><font size="3">~ 500 Data's per month</font></li>
+                                <li><font size="3">~ 75 data's weekly update</font></li>
+                                <li><font size="3">Start Promoting Instantly</font></li>
                                 <li><font size="3">60 days Validity</font></li>
-                                <li><font size="3">100% Email Verified </font>
-                                <li><font size="3">~ 300 data's per month</font></li>
-                                <li><font size="3">~ 70 data's every week update</font></li>
-                                <li><font size="3">100% Satisfaction Guarantee</font></li>
-                                <li><font size="3">Instant Access</font></li>
                             </ul>
                             <div class="text-center mt-4">
-                                <a href="{{URL::to("contact")}}" class="btn btn-lg btn-primary btn-theme">Sign Up for Premium</a>
+                                
                             </div>
                         </div>
                     </div>
@@ -68,18 +66,17 @@
                             <h4 class="mb-4">Ultimate</h4>
                         </div>
                         <div class="card-body p-0">
-                            <h1 class="card-title pricing-card-title my-price-title">$50<small class="text-dull">/-</small></h1>
+                            <h1 class="card-title pricing-card-title my-price-title">$65<small class="text-dull">/-</small></h1>
                             <p>Connect with decision makers before your competitors do.</p>
                             <ul class="list-unstyled list-pricing mt-3 mb-4">
+                                <li><font size="3">100% Email Verified</font></li>
+                                <li><font size="3">100% Satisfaction Guarantee</font>
+                                <li><font size="3">~ 700 Data's per month</font></li>
+                                <li><font size="3">~ 75 data's weekly update</font></li>
+                                <li><font size="3">Start Promoting Instantly</font></li>
                                 <li><font size="3">90 days Validity</font></li>
-                                <li><font size="3">100% Email Verified </font>
-                                <li><font size="3">~ 300 data's per month</font></li>
-                                <li><font size="3">~ 70 data's every week update</font></li>
-                                <li><font size="3">100% Satisfaction Guarantee</font></li>
-                                <li><font size="3">Instant Access</font></li>
                             </ul>
-                            <div class="text-center mt-4">
-                                <a href="{{URL::to("contact")}}" class="btn btn-lg btn-outline-primary btn-outline-theme">Sign Up for Ultimate</a>
+
                             </div>
                         </div>
                     </div>

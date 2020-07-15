@@ -4,8 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title> Apparel Importers Data SignUp</title>
 
-    <title>Market a Corporate Category Bootstrap Responsive Website Template - Signup </title>
     <!-- web fonts -->
     <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
@@ -13,12 +13,20 @@
     <!-- Template CSS -->
 
     <link href="{{ asset('assets/client/css/style-liberty.css') }}" rel="stylesheet" media="all">
+        <style>
+        .w3l-login .login-box1 {
+            background-color: #ececec;
+            background-size: cover;
+            height: 200vh;
+            display: grid;
+            align-items: center; }
+    </style>
 
 
 </head>
 <body>
 <section class="w3l-login">
-    <div class="login-box">
+    <div class="login-box1">
         <div class="container">
             <div class="logo text-center mb-3">
                 <a class="navbar-brand" href="{{URL::to("/")}}"><img src="{{asset('assets/client/images/logo.png')}}"> </a>
@@ -32,11 +40,11 @@
                 <form action="{{ URL::to('signupsave') }}" method="post" id="signup" name="signup">
                     @csrf
                     <div class="form-group">
-                        <label class="field-info" for="name">Name</label>
+                        <label class="field-info" for="name">Your Name</label>
                         <input type="text" class="form-control validate[required]" name="name" id="name"  >
                     </div>
                     <div class="form-group">
-                        <label class="field-info" for="email">Email</label>
+                        <label class="field-info" for="email">E-Mail (LOGIN ID)</label>
                         <input type="email" class="form-control validate[required,custom[email]]" name="email" id="email" required="">
                     </div>
                     <div class="form-group">
@@ -44,11 +52,11 @@
                         <input type="password" class="form-control validate[required]" id="inputPassword" name="inputPassword" >
                     </div>
                     <div class="form-group">
-                        <label class="field-info" for="retypePassword">Retype Password</label>
+                        <label class="field-info" for="retypePassword">Re-Type Password</label>
                         <input type="password" class="form-control validate[equals[inputPassword]]" id="retypePassword" name="retypePassword">
                     </div>
                     <div class="form-group">
-                        <label class="field-info" for="companyname">Company Name</label>
+                        <label class="field-info" for="companyname">Business Name</label>
                         <input type="text" class="form-control validate[required]" name="companyname" id="companyname" >
                     </div>
                     <div class="form-group">
@@ -60,7 +68,7 @@
                         <textarea  class="form-control" name="address" id="address" ></textarea>
                     </div>
                     <div class="form-group">
-                        <label class="field-info" for="place ">Place</label>
+                        <label class="field-info" for="place ">Town/City</label>
                         <input type="text" class="form-control validate[required]" name="place" id="place" >
                     </div>
                     <div class="form-group">
@@ -72,12 +80,12 @@
                         <input type="text" class="form-control validate[required]" name="country" id="country" >
                     </div>
                     <div class="form-group">
-                        <label class="field-info" for="phone ">Phone</label>
+                        <label class="field-info" for="phone ">Mobile</label>
                         <input type="text" class="form-control validate[required]" name="phone" id="phone" >
                     </div>
                     <div class="form-group">
-                        <label class="field-info" for="inputUsernameEmail">Interested Catagories</label>
-                        <select class="select2class form-control validate[required]" id="catagory" name="catagory[]" multiple="multiple" placeholder="Please Select"  >
+                        <label class="field-info" for="inputUsernameEmail">Select Interested Category</label>
+                        <select class="select2class form-control " id="catagory" name="catagory[]" multiple="multiple" placeholder="Please Select"  >
                             @foreach($catagory as $cat)
                                 <option value="{{$cat->id}}">{{$cat->catagory_desc}}</option>
                             @endforeach
@@ -89,7 +97,10 @@
                     <!-- Default unchecked -->
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input validate[required]" value="1" id="defaultUnchecked" name="defaultUnchecked">
-                        <label class="custom-control-label" for="defaultUnchecked">I agree to the <a href="#terms" class="editContent">Terms of Use</a></label>
+                        <label class="custom-control-label" for="defaultUnchecked">I agree to the
+
+                          {{--  <a href="JavaScript:newPopup({{URL::to('termsandcondition')}});" class="editContent">Terms of Use</a></label>--}}
+                            <a href="JavaScript:termsandcondition();" class="editContent">Terms of Use</a></label>
                     </div>
                     <button type="submit" class="btn btn-primary btn-theme mt-4">
                         Sign up
@@ -133,6 +144,17 @@
 
 
     });
+
+
+
+
+    function termsandcondition()
+    {
+        var url="{{URL::to('termsandcondition')}}";
+        popupWindow = window.open(
+            url,'popUpWindow','height=800,width=1024,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+
+    }
 
 </script>
 

@@ -14,10 +14,8 @@
             <div class="container py-md-5 py-0">
                 <div class="row growth-info justify-content-center align-items-center text-center py-md-5 w-100 mx-auto">
                     <div class="col-lg-8 py-lg-3">
-                        <h3>Starting from your Dream Jobs, Your Dream Jobs Are Waiting</h3>
-                        <p class="my-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor atque consequuntur unde,
-                            necessitatibus
-                            quaerat fuga explicabo, quis placeat iure perferendis alias libero velit officiis.</p>
+                        <h3>Apparel Buyers Datas</h3>
+                        <p class="my-4">Global Apparel Garment Buyers Contacts at ApparelImportersData.com</p>
                         <a href="#positions" class="btn btn-primary btn-theme">See All POsitions</a>
                     </div>
                     <div class="position-absolute img-circle emp-pos1 d-md-block d-none">
@@ -103,4 +101,17 @@
 
 
 
+@endsection
+
+
+
+@section('footer-content')
+<p align="left" style="line-height: 1.8; margin-top: 2; margin-bottom: 2" dir="ltr">
+<font face="Arial" color="#00005B" size="4">Get Instant Enquiries from Buyers</font><font face="Arial" size="5" color="#00005B"><br>
+</font><span style="letter-spacing: normal; background-color: #FFFFFF">
+<font face="Nunito, sans-serif" style="font-size: 11pt" color="#333333">By 
+Sending Brief Business Profiles with High Quality Product Photos will gives high 
+impact on you.</font></span></p>
+<p align="left" style="line-height: 1.8; margin-top: 2; margin-bottom: 2">&nbsp;</p>
+    
 @endsection

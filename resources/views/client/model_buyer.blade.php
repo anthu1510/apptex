@@ -5,14 +5,14 @@
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Buyer Detail</h4>
+                <h4 class="modal-title">Buyer's Profile</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
 
             <!-- Modal body -->
             <div class="modal-body">
                     <div class="form-group">
-                    <label for="u_name">Company Name</label>
+                    <label for="u_name">Buyer Name</label>
                      <input type="text" name="cname" id="cname" class="form-control"
                            value="" >
                 </div>

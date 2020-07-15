@@ -32,15 +32,21 @@
                 <div class=" offset-4 col-md-4">
                     <div class="mt-5 price-card price-card2 p-lg-4 p-md-3 p-4 recomemded-price">
                         <div class="card-header p-0 card-heading">
-                            <h4 class="mb-4">Status <span class="label label-paysuccess">Payment Success</span></h4>
+                            <h5 class="mb-4">Status <span class="label label-paysuccess">Payment Success</span></h5>
                         </div>
                         <div class="card-body p-0">
-                            <h1 class="card-title pricing-card-title my-price-title">₹ 1500<small class="text-dull">/month</small></h1>
+                            <h1 class="card-title pricing-card-title my-price-title">₹ 2000<small class="text-dull">/month</small></h1>
                             <p>We recive the Payment</p>
                             <ul class="list-unstyled list-pricing mt-3 mb-4">
                                 <li>Transaction No: <span style="font-weight: bold"> {{$razorpay_order_id}} </span></li>
                                 <li>Start Date: <span style="font-weight: bold"> {{$start_date}} </span></li>
-                                <li>Validity Date: <span style="font-weight: bold"> {{$validity_date}} </span></li>
+                                <li>Validity Date: <span style="font-weight: bold"> {{$validity_date}} </span></li> <br>
+<p dir="ltr"><font face="Arial" size="2" color="#000080">
+<a href="https://apparelimportersdata.com/clientlogin" style="text-decoration: none">
+<b><font color="#FF0000">Go Back to Login !  Now its your Turn...</font></b><br><font color="#000080">
+</font></a></font><font face="Arial" size="2" color="#000080"><b>Use Registered 
+Login (email id) and Password</b><br> </font>
+<font face="Arial" size="2" color="#000080">to Access Buyers Profile !!!</font></p>
 
                             </ul>
                             <div class="text-center mt-4">
