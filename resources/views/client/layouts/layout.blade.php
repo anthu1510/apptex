@@ -15,6 +15,7 @@
     <!-- Template CSS -->
     <!--<link rel="stylesheet" href="assets/css/style-liberty.css">-->
     <link href="{{ asset('assets/client/css/style-liberty.css') }}" rel="stylesheet" media="all">
+    <link rel='icon' href='{{asset('assets/client/images/favicon.ico')}}' type='image/x-icon'/>
     @yield('additional-css')
 </head>r
 <body>
@@ -50,13 +51,13 @@
                         <a class="nav-link" href="{{URL::to("contact")}}">Contact</a>
                     </li>
                      @if(isset( \App\Http\Controllers\SupplierController::getSupplier()->id))
-                    
+
                       <li class="nav-item">
                         <a class="nav-link" href="{{URL::to("countrylist")}}"> <p style="color:#9d0055">My Account </p> </a>
                     </li>
-                    
+
                      @endif
-                    
+
                 </ul>
                 <div class="form-inline">
                     @if(isset( \App\Http\Controllers\SupplierController::getSupplier()->id))

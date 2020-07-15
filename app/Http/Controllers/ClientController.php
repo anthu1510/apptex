@@ -389,7 +389,7 @@ class ClientController extends Controller
     }
     public function PrivacyStatement()
     {
-        return view("client.refund_policy");
+        return view("client.privacy");
     }
 
 
