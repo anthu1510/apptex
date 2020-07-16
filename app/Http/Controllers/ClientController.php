@@ -134,8 +134,8 @@ class ClientController extends Controller
                 "key"               => $keyId,
                 "amount"            => $amount,
                 "name"              => $data_sup['name'],
-                "description"       => "Apptex Paid member",
-                "image"             => "https://apptex.attractsoftware.com/assets/images/logo/logo.png",
+                "description"       => "Apparel Importers Data",
+                "image"             => "https://apparelimportersdata.com/assets/client/images/logo.png",
                 "prefill"           => [
                     "name"              => $data_sup['name'],
                     "email"             => $data_sup['email'],

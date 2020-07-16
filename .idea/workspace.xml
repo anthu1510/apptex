@@ -11,27 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f043efba-adfa-4925-8076-ea4b7ac0b070" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/client.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/client/enqiry.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/client/privacy.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/client/refund_policy.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/client/terms_of_use.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/client/clientview.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/client.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/layouts/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/list_buyer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/list_buyer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/list_catagory.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/list_catagory.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/model_buyer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/model_buyer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/payamount.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/payamount.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/payment_success.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/payment_success.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/pricing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/pricing.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/signup.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/signup.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +184,11 @@
       <workItem from="1594732121763" duration="3715000" />
       <workItem from="1594791674161" duration="11000" />
       <workItem from="1594791692207" duration="3813000" />
-      <workItem from="1594801487357" duration="3755000" />
+      <workItem from="1594801487357" duration="4507000" />
+      <workItem from="1594815471225" duration="79000" />
+      <workItem from="1594820578900" duration="758000" />
+      <workItem from="1594821363257" duration="6000" />
+      <workItem from="1594879454263" duration="873000" />
     </task>
     <task id="LOCAL-00001" summary="SignUp form Created&#10;03-07-2020&#10;by&#10;Ravindran">
       <created>1593786568200</created>
@@ -239,7 +225,21 @@
       <option name="project" value="LOCAL" />
       <updated>1594735822091</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Final &#10;15-07-2020&#10;by&#10;Ravindran">
+      <created>1594805300812</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1594805300812</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Final &#10;15-07-2020&#10;by&#10;Ravindran">
+      <created>1594821316758</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1594821316758</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +287,8 @@
     <MESSAGE value="SignUp form Created&#10;03-07-2020&#10;by&#10;Ravindran" />
     <MESSAGE value="Final &#10;12-07-2020&#10;by&#10;Ravindran" />
     <MESSAGE value="Final &#10;14-07-2020&#10;by&#10;Ravindran" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final &#10;14-07-2020&#10;by&#10;Ravindran" />
+    <MESSAGE value="Final &#10;15-07-2020&#10;by&#10;Ravindran" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final &#10;15-07-2020&#10;by&#10;Ravindran" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="106" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593763250252">
@@ -303,11 +304,11 @@
       <screen x="0" y="27" width="1600" height="835" />
     </state>
     <state x="429" y="73" width="732" height="749" key="#phpunit.xml/0.27.1600.835@0.27.1600.835" timestamp="1593778645953" />
-    <state x="339" y="27" width="912" height="703" key="CommitChangelistDialog2" timestamp="1594735821836">
+    <state x="339" y="27" width="912" height="703" key="CommitChangelistDialog2" timestamp="1594821316477">
       <screen x="0" y="27" width="1600" height="835" />
     </state>
     <state x="289" y="27" width="912" height="703" key="CommitChangelistDialog2/0.27.1366.703@0.27.1366.703" timestamp="1594575866296" />
-    <state x="339" y="27" width="912" height="835" key="CommitChangelistDialog2/0.27.1600.835@0.27.1600.835" timestamp="1594735821836" />
+    <state x="339" y="27" width="912" height="835" key="CommitChangelistDialog2/0.27.1600.835@0.27.1600.835" timestamp="1594821316477" />
     <state x="571" y="188" width="447" height="520" key="FileChooserDialogImpl" timestamp="1594805020247">
       <screen x="0" y="27" width="1600" height="835" />
     </state>
@@ -344,11 +345,11 @@
       <screen x="0" y="27" width="1600" height="835" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.27.1600.835@0.27.1600.835" timestamp="1593606846739" />
-    <state x="395" y="180" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1594735831482">
+    <state x="395" y="180" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1594821326050">
       <screen x="0" y="27" width="1600" height="835" />
     </state>
     <state x="337" y="156" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.703@0.27.1366.703" timestamp="1594575915478" />
-    <state x="395" y="180" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1600.835@0.27.1600.835" timestamp="1594735831482" />
+    <state x="395" y="180" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1600.835@0.27.1600.835" timestamp="1594821326050" />
     <state x="553" y="262" width="484" height="372" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1593780226665">
       <screen x="0" y="27" width="1600" height="835" />
     </state>
