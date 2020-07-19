@@ -79,6 +79,23 @@ class BuyerController extends Controller
             'countries'=>$countries];
         return view('dashboard.node.list')->with($data);
     }
+    public function listContact()
+    {
+            $catagories=DB::table("catagory")->get();
+            $countries=DB::table("country")->get();
+
+
+        $data=['catagories'=>$catagories,
+            'countries'=>$countries];
+        return view('dashboard.contact.list')->with($data);
+    }
+
+    public function listSupplier()
+    {
+
+        return view('dashboard.supplier.list');
+    }
+
     public function NodeServerSide()
     {
         //$res = DB::select(DB::raw("SELECT * FROM `node`"));
@@ -117,6 +134,21 @@ class BuyerController extends Controller
                                             "));
         return datatables()->of($res)->toJson();
     }
+    public function ContactServerSide()
+    {
+        //$res = DB::select(DB::raw("SELECT * FROM `node`"));
+        $res = DB::select(DB::raw("select * FROM enquiry_form"));
+        return datatables()->of($res)->toJson();
+    }
+    public function SupplierServerSide()
+    {
+        //$res = DB::select(DB::raw("SELECT * FROM `node`"));
+        $res = DB::select(DB::raw("select * FROM supplier"));
+        return datatables()->of($res)->toJson();
+    }
+
+
+
     public function BuyerServerSideFilter()
     {
         //$res = DB::select(DB::raw("SELECT * FROM `node`"));
@@ -194,6 +226,68 @@ class BuyerController extends Controller
         echo json_encode($res);
     }
 
+    public function ContactDetail()
+    {
+        $id = \request()->id;
+        $res = DB::table('enquiry_form')->where('id', $id)->first();
+        echo json_encode($res);
+    }
+    public function DeleteContact()
+    {
+        $id = \request()->id;
+        $res = DB::table('enquiry_form')->where('id', $id)->delete();
+        echo 1;
+    }
+    public function SupplierDetail()
+    {
+        $id = \request()->id;
+
+        $qry="SELECT sup.id,
+       sup.name,
+       sup.company_name,
+       sup.email,
+       sup.business_desc,
+       sup.address,
+       sup.place,
+       sup.state,
+       sup.country,
+       sup.phone,
+       sup.catagory_id,
+       group_concat(c.catagory_desc) AS catagory,
+       sup.status,
+       sup.created_at,
+       sup.updated_at,
+       sup.validity_date
+FROM supplier sup
+         JOIN catagory c ON find_in_set(c.id, sup.catagory_id)
+WHERE sup.id = $id
+GROUP BY sup.id,
+         sup.name,
+         sup.company_name,
+         sup.email,
+         sup.business_desc,
+         sup.address,
+         sup.place,
+         sup.state,
+         sup.country,
+         sup.phone,
+         sup.catagory_id,
+         sup.status,
+         sup.created_at,
+         sup.updated_at,
+         sup.validity_date";
+
+
+        $res = DB::select(DB::raw($qry));
+        echo json_encode($res[0]);
+    }
+    public function DeleteSupplier()
+    {
+        $id = \request()->id;
+        $res = DB::table('supplier')->where('id', $id)->delete();
+        echo 1;
+    }
+
     public function UpdateSave()
     {
         $req=\request()->all();
@@ -226,6 +320,18 @@ class BuyerController extends Controller
         }
 
         return $this->FlshMessage($message);
+
+    }
+
+    public function ValidityExtent()
+    {
+        $req=\request()->all();
+        $id=$req['sup-id'];
+        $day=$req['ex-days'];
+        //print_r($req);
+        $qry=" UPDATE supplier SET validity_date=DATE_ADD(validity_date, INTERVAL $day DAY) WHERE id=$id ";
+        DB::select(DB::raw($qry));
+        return \redirect('dashboard/buyer/supplierlist');
 
     }
 

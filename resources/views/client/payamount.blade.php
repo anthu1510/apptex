@@ -20,8 +20,8 @@
                         <ul class="list-unstyled list-pricing mt-3 mb-4">
                             <li>100% Email Verified</li>
                             <li>100% Satisfaction Guarantee</li>
-                            <li>~300 Data's per month</li>
-                            <li>~75 data's weekly update</li>
+                            <li>200 Data's instant access</li>
+                            <li>50 data's once in a week update</li>
                             <li>Start Promoting Instantly</li>
                             <li>30days Validity</li>
                         </ul>
@@ -42,9 +42,15 @@
                         <ul class="list-unstyled list-pricing mt-3 mb-4">
                             <li>100% Email Verified</li>
                             <li>100% Satisfaction Guarantee</li>
-                            <li>~300 Data's per month</li>
-                            <li>~75 data's weekly update</li>
-                            <li>30days Validity</li>
+                            <li>200 Data's instant access</li>
+                            <li>50 data's once in a week update</li>
+                            <li>30days Validity</li> <br>
+                        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0" dir="ltr">
+                        <font face="Arial" size="2"><font color="#484848">We suggest to
+                        </font><font color="#B30000"><u>Transact using Credit/Debit Cards for at anytime.</u></font><br>
+                        <font color="#484848">Some <b>Banks</b> <b>NOT supports 
+                        Internet Banking after 6:00PM</b></font></font></p>
+
                         </ul>
                         <div class="text-center mt-4">
                             <form action="{{URL::to('paymentsuccess')}}" method="POST">

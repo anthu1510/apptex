@@ -42,7 +42,7 @@
                     <li class="has-sub">
                         <a class="js-arrow open" href="#">
                             <i class="fab fa-linode"></i>Buyer</a>
-                        <ul class="list-unstyled navbar__sub-list js-sub-list" style="display: {{ Request::segment(2) == 'node' ? 'block' : 'none' }};">
+                        <ul class="list-unstyled navbar__sub-list js-sub-list" style="display: {{ Request::segment(2) == 'buyer' ? 'block' : 'none' }};">
                             <li class="{{ (Request::segment(2) == 'buyer' && Request::segment(3)=='create') ? 'active' : '' }}">
                                 <a href="{{ URL::to('/dashboard/buyer/create') }}">
                                     <i class="fa fa-plus"></i>New</a>
@@ -54,6 +54,24 @@
 
                         </ul>
                     </li>
+
+                    <li class="has-sub">
+                        <a class="js-arrow open" href="#">
+                            <i class="fa fa-window-restore"></i>Others</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list" style="display: {{ Request::segment(2) == 'buyer' ? 'block' : 'none' }};">
+                            <li class="{{ (Request::segment(2) == 'buyer' && Request::segment(3)=='contactlist') ? 'active' : '' }}">
+                                <a href="{{ URL::to('/dashboard/buyer/contactlist') }}">
+                                    <i class="fa fa-list"></i>Enquiry</a>
+                            </li>
+                            <li class="{{ (Request::segment(2) == 'buyer' && Request::segment(3) == 'supplierlist') ? 'active' : '' }}">
+                                <a href="{{ URL::to('/dashboard/buyer/supplierlist') }}">
+                                    <i class="fa fa-list"></i>Supplier</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+
 
                 </ul>
             </nav>

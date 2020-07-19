@@ -35,7 +35,7 @@
                     <div class="col-md-5 content-left pt-md-0 pt-5">
                         <h1>&nbsp;</h1>
                         <h1>Ready to use Apparel Buyers Information on a Platter</h1>
-                        <p class="mt-3 mb-md-5 mb-4">Your search for precise authentic information about apparel buyers worldwide ends here. Subscribe to our database and see your business scale new heights.</p>
+                        <p class="mt-3 mb-md-5 mb-4">You can reach a targeted group of Fashion Brands, Retail Stores and High Fashion Designer Boutique with Authentic Apparel Buyers Contact List. Also directly connect with potential American and European Garment Buyers faster than your competitors.</p>
                     </div>
                     <div class="col-md-7 content-photo mt-md-0 mt-5">
                         &nbsp;<p>
@@ -72,17 +72,17 @@
                         </tr>
                         <tr>
                             <td width="33%" height="39">
-                                <p dir="ltr"><span style="font-size: 11pt">&nbsp; Sports Wears</span></td>
+                                <p dir="ltr"><span style="font-size: 11pt">&nbsp; Clothings</span></td>
                             <td width="33%" height="39">
-                                <p dir="ltr"><span style="font-size: 11pt">&nbsp; T-Shirts</span></td>
+                                <p dir="ltr"><span style="font-size: 11pt">&nbsp; Readymade Garments</span></td>
                             <td width="33%" height="39"><span style="font-size: 11pt">&nbsp;
-            Casual Wears</span></td>
+            T-Shirts</span></td>
                         </tr>
                         <tr>
                             <td width="33%" height="40"><span style="font-size: 11pt">&nbsp;
             Under Garments / Sleep Wears / Lingerie</span></td>
                             <td width="33%" height="40">
-                                <p dir="ltr"><span style="font-size: 11pt">&nbsp; Readymade Garments</span></td>
+                                <p dir="ltr"><span style="font-size: 11pt">&nbsp; Sports Wears</span></td>
                             <td width="33%" height="40">
                                 <p dir="ltr"><span style="font-size: 11pt">&nbsp;
             Pants/Shorts/Shirts/Tops</span></td>
@@ -102,7 +102,7 @@
             <section class="w3l-index-block2 py-5">
                 <div class="container py-md-3">
                     <div class="heading text-center mx-auto">
-                        <a href="pricing" class="btn btn-primary btn-theme">Apparel Buyers Profile Just for 27$ - Signup </a>
+                        <a href="pricing" class="btn btn-primary btn-theme">Signup - 27USD for Apparel Buyers Data</a>
                     </div>
                     <div class="row bottom_grids pt-md-3">
                         <div class="col-lg-4 col-md-6 mt-5">

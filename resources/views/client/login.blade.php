@@ -34,7 +34,7 @@
           </a> -->
             </div>
             <div class="login-form py-5 px-4 mx-auto">
-                <h3 class="account-title mb-4">Please Log in, or <a href="{{URL::to("signup")}}">Sign Up</a></h3>
+                <h3 class="account-title mb-4">Please Log in, or <a href="{{URL::to("selecturpack")}}">Sign Up</a></h3>
                 <form action="{{ URL::to('clientlogincheck') }}" method="post" id="signup" name="signup">
                     @csrf
                     <div class="form-group">

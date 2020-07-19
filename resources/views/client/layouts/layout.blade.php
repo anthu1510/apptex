@@ -46,6 +46,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{URL::to("pricing")}}">Pricing</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{URL::to("samples")}}">Samples</a>
+                    </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="{{URL::to("contact")}}">Contact</a>
@@ -68,7 +71,7 @@
                              Expired in[{{ date_diff(date_create(\App\Http\Controllers\SupplierController::getSupplier()->validity_date),date_create(date('Y-m-d')))->format("%a") }}] Day/s</p>
                     @else
                         <a href="clientlogin" class="login mr-4">Log in</a>
-                        <a href="{{URL::to("signup")}}" class="btn btn-primary btn-theme">SIGN UP</a>
+                        <a href="{{URL::to("selecturpack")}}" class="btn btn-primary btn-theme">SIGN UP</a>
                     @endif
 
 

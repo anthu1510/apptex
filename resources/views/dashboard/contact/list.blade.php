@@ -1,16 +1,9 @@
 @extends('layouts.dashboard')
 
-@section('title', 'Buyer List')
+@section('title', 'Enquiry List')
 
 @section('pagecontent')
-    <div class="row mb-2">
-        <div class="col-lg-1">
-            <a href="{{ URL::to('/dashboard/buyer/create') }}"  class="btn btn-outline-primary"
 
-            >Create Buyer
-            </a>
-        </div>
-    </div>
     <div class="row">
         <div class="col-md-12">
             <!-- DATA TABLE -->
@@ -19,13 +12,11 @@
                     <thead>
                     <tr>
                         <th width="5%">Id</th>
-                        <th width="10%">Country</th>
-                        <th width="10%">Catagory</th>
-                        <th width="10%">Buyer Name</th>
-                        <th width="25%">Pro.Desc</th>
-                        <th width="5%">Contact</th>
-                        <th>Phone</th>
-                        <th width="5%">Fax</th>
+                        <th width="10%">First Name</th>
+                        <th width="10%">Last Name</th>
+                        <th width="10%">Email Id</th>
+                        <th width="10%">Phone</th>
+                        <th width="25%">Message</th>
                         <th width="2%">Action</th>
                     </tr>
                     </thead>
@@ -38,7 +29,7 @@
 @endsection
 
 @section('model-content')
-    @include('dashboard.node.modal')
+    @include('dashboard.contact.modal')
 @endsection
 
 @section('datatables-scripts')
@@ -53,22 +44,31 @@
                 "order": [[ 0, "desc" ]],
                 "processing": true,
                 "serverSide": true,
-                ajax: '{{ URL::to('/dashboard/buyerserverside') }}',
+                ajax: '{{ URL::to('/dashboard/contactserverside') }}',
                 columns: [
                     { data: 'id' },
-                    { data: 'country'},
-                    { data: 'catagory' },
-                    { data: 'buyername'},
-                    { data: 'product_desc'},
-                    { data: 'contct_person' },
-                    { data: 'phone'},
-                    { data: 'fax'},
+                    { data: 'first_name'},
+                    { data: 'last_name' },
+                    { data: 'email_id'},
+                    { data: 'phone_no'},
+                    { data: 'messge',
+                        render: function (data) {
+                            var bedget = 'badge badge-';
+
+                            return data.substring(1, 25);
+
+                    }
+                    },
+
 
                     {
                         targets: 8,
                         data: null,
-                        defaultContent: '<button id="btnedit" title="Edit" type="button" class="btn btn-primary btn-sm">' +
-                            '<i class="fa fa-edit" aria-hidden="true"></i></button>&nbsp;&nbsp;'
+                        defaultContent: '<button id="btnedit" title="View" type="button" class="btn btn-primary btn-sm">' +
+                            '<i class="fa fa-eye" aria-hidden="true"></i></button>&nbsp;&nbsp;'+
+                            '<button id="btndelete" type="button" title="Delete" class="btn btn-danger btn-sm">' +
+                            '<i class="fa fa-trash" aria-hidden="true"></i>' +
+                            '</button>'
 
 
                     }
@@ -99,10 +99,8 @@
 
             $('#nodetable tbody').on( 'click', '#btndelete', function () {
                 var data = table.row($(this).parents('tr')).data();
-                if(data.status=='active'|| data.status=='inactive')
-                {
-                    //Delete(data.id,data.name,data.coupon_code);
-                }
+
+                    Delete(data.id,data.first_name,data.last_name);
 
             } );
 
@@ -112,7 +110,7 @@
         function Edit(id) {
 
             $.ajax({
-                url: "{{ URL::to('/dashboard/buyer/buyeredit') }}",
+                url: "{{ URL::to('/dashboard/buyer/contactdetail') }}",
                 type: "POST",
                 data: {id: id, "_token": "{{ csrf_token() }}"},
                 success: function (data) {
@@ -120,32 +118,23 @@
 
                     console.log(json);
 
-                    $('#hbuyer_id').val(json.id);
-                    $('#country').val(json.country_id);
-                   // $('#country').val(json.country_id);
-                    var row=json.catagory_id;
-                    var result = row.split(',');
-                    //console.log(result);
-                    $('#catagory').val(result);
-                    $('#buyer_name').val(json.buyer_name);
-                    $('#product_desc').val(json.desc);
-                    $('#contact_person').val(json.contact_person);
-                    $('#contact_address').val(json.contact_address);
-                    $('#phone').val(json.phone);
-                    $('#fax').val(json.fax);
-                        $('#email_id').val(json.email);
-                    $('#website').val(json.website);
+                    $("#full-name").text(json.first_name + " " +json.last_name);
+                    $("#email_id").text(json.email_id  );
+                    $("#phone_no").text(json.phone_no  );
+                    $("#messge").text(json.messge  );
+
+
 
                     $('#myModal').modal('show');
                 }
             });
         }
 
-        function Delete(id,name,coupon) {
-            var con = confirm('Are you want Delete ' + name +"'s coupon "+coupon+" ?");
+        function Delete(id,name,lname) {
+            var con = confirm('Are you want Delete ' + name +" "+lname+" ?");
             if(con == true){
                 $.ajax({
-                    url: "{{ URL::to('dashboard/coupon/delete') }}",
+                    url: "{{ URL::to('dashboard/buyer/deletecontact') }}",
                     type: "POST",
                     data: {id: id, "_token": "{{ csrf_token() }}"},
                     success: function (data) {

@@ -36,9 +36,10 @@
         </a> -->
             </div>
             <div class="login-form py-5 px-4 mx-auto">
-                <h3 class="account-title mb-4">Sign up now, or <a href="login.html">Log in</a></h3>
+                <h3 class="account-title mb-4">Sign up now, or <a href="{{ URL::to('clientlogin') }}">Log in</a></h3>
                 <form action="{{ URL::to('signupsave') }}" method="post" id="signup" name="signup">
                     @csrf
+                    <input type="hidden" name="pack" value="{{$pack}}" >
                     <div class="form-group">
                         <label class="field-info" for="name">Your Name</label>
                         <input type="text" class="form-control validate[required]" name="name" id="name"  >

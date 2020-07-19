@@ -14,7 +14,10 @@ Route::get('/', 'ClientController@Home');
 Route::get('about', 'ClientController@About');
 Route::get('how-it-work', 'ClientController@HowItWorks');
 Route::get('pricing', 'ClientController@Pricing');
+Route::get('selecturpack', 'ClientController@SelectYourPack');
 Route::get('contact', 'ClientController@Contact');
+Route::get('samples', 'ClientController@Samples');
+Route::get('reachus', 'ClientController@ReachUs');
 Route::get('clientlogin', 'ClientController@Login');
 Route::post('clientlogincheck', 'SupplierController@Login');
 Route::get('clientlogout', 'SupplierController@ClientLogOut');
@@ -39,7 +42,8 @@ Route::middleware(['client.auth'])->group(function () {
 
 
 
-Route::get('signup', 'ClientController@Signup');
+//Route::get('signup', 'ClientController@Signup');
+Route::get('signup/{pack}', 'ClientController@Signup');
 Route::post('signupsave', 'ClientController@SignupSave');
 //Route::post('paymentsuccess', 'ClientController@PaymentSuccess');
 Route::post('paymentsuccess', 'ClientController@PaymentSuccess');
@@ -94,56 +98,21 @@ Route::post('newpassupdate', 'UserController@ResetPasswordUpdate');
         Route::post('users/delete', 'UserController@UserDelete');
         Route::get('userserverside', 'UserController@UsersServerSide');
 
-
-
-        //coupon
-        Route::get('coupon', 'CouponController@index');
-        Route::get('coupon/list', 'CouponController@list');
-        Route::get('coupon/listactive', 'CouponController@listActive');
-        Route::post('coupon/save', 'CouponController@save');
-        Route::get('couponserverside', 'CouponController@CouponServerSide');
-        Route::get('couponactiveserverside', 'CouponController@CouponActiveServerSide');
-        Route::post('coupon/deactivate', 'CouponController@CouponDeactivate');
-        Route::post('coupon/activate', 'CouponController@CouponActivate');
-        Route::post('coupon/delete', 'CouponController@CouponDelete');
-        Route::post('coupon/couponedit', 'CouponController@CouponEdit');
-        Route::post('coupon/updatesave', 'CouponController@UpdateSave');
-
-
-        //Node
-/*        Route::get('node/aadharcheck', 'NodeController@AadharCheack');
-        Route::get('node/pancheck', 'NodeController@PanCheack');
-        Route::get('node/sponsercheck', 'NodeController@SponserCheck');
-        Route::get('node/couponcheck', 'NodeController@CouponCheck');
-        Route::get('node/getsponser', 'NodeController@GetSponser');
-        Route::get('node/create', 'NodeController@Create');
-        Route::post('node/save', 'NodeController@Save');
-        Route::post('node/save2', 'NodeController@save2');
-        Route::get('node/list', 'NodeController@list');
-        Route::get('nodeserverside', 'NodeController@NodeServerSide');
-        Route::post('node/nodeedit', 'NodeController@NodeEdit');
-        Route::post('node/updatesave', 'NodeController@UpdateSave');
-        Route::post('node/deactivate', 'NodeController@NodeDeactivate');
-        Route::post('node/activate', 'NodeController@NodeActivate');
-        Route::get('node/test/{id}', 'NodeController@getParent1');*/
-
-        /*Route::get('buyer/create', 'NodeController@Create');
-        Route::post('buyer/save2', 'NodeController@save2');
-        Route::get('buyer/list', 'NodeController@list');
-        Route::get('buyerserverside', 'NodeController@NodeServerSide');
-        Route::post('buyer/buyeredit', 'NodeController@NodeEdit');
-        Route::post('buyer/updatesave', 'NodeController@UpdateSave');*/
-
-
-
-
-
         Route::get('buyer/create', 'BuyerController@Create');
         Route::post('buyer/save2', 'BuyerController@save2');
         Route::get('buyer/list', 'BuyerController@list');
+        Route::get('buyer/contactlist', 'BuyerController@listContact');
+        Route::get('buyer/supplierlist', 'BuyerController@listSupplier');
         Route::get('buyerserverside', 'BuyerController@NodeServerSide');
+        Route::get('contactserverside', 'BuyerController@ContactServerSide');
+        Route::get('supplierserverside', 'BuyerController@SupplierServerSide');
         Route::post('buyer/buyeredit', 'BuyerController@NodeEdit');
+        Route::post('buyer/contactdetail', 'BuyerController@ContactDetail');
+        Route::post('buyer/deletecontact', 'BuyerController@DeleteContact');
+        Route::post('buyer/supplierdetail', 'BuyerController@SupplierDetail');
+        Route::post('buyer/deletesupplier', 'BuyerController@DeleteSupplier');
         Route::post('buyer/updatesave', 'BuyerController@UpdateSave');
+        Route::post('buyer/validityextent', 'BuyerController@ValidityExtent');
 
 
 

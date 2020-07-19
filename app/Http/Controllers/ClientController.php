@@ -59,25 +59,52 @@ class ClientController extends Controller
 
     public function Signup()
     {
+        $pack=\request()->pack;
+        //print_r($pack);exit;
         $catagory=DB::table('catagory')->get();
-        $data=['catagory'=>$catagory];
+        $data=[
+            'catagory'=>$catagory,
+            'pack'=>$pack
+        ];
         return view('client.signup')->with($data);
     }
     public function SignupSave()
     {
+        $req=\request()->all();
+        $pack=$req['pack'];
+
 
         $displayCurrency="INR";
         $keyId=env('RAZORPAY_KEY');
         $secret=env('RAZORPAY_SECRET');
-        $amount=env('RAZORPAY_AMOUNT');
 
-   /*     $keyId='rzp_live_Z9mdhiNJrjZmkv';
-        $secret='KgG3QGlFQYIOBjZtEi50N5w1';*/
-        $req=\request()->all();
-      //  echo "<pre>";
-      //  print_r($req);
+        if($pack=='std')
+        {
 
-        $catagory=implode(',',$req['catagory']);
+            $amount=env('RAZORPAY_AMOUNT_STD');
+
+
+        }
+        if($pack=='pre')
+        {
+
+            $amount=env('RAZORPAY_AMOUNT_PRE');
+        }
+        if($pack=='ult')
+        {
+
+            $amount=env('RAZORPAY_AMOUNT_ULT');
+        }
+
+        if(isset($req['catagory']))
+        {
+            $catagory=implode(',',$req['catagory']);
+        }
+        else
+        {
+            $catagory='';
+        }
+
         $password=md5($req['inputPassword']);
 
         $data_sup=[
@@ -318,6 +345,10 @@ class ClientController extends Controller
     {
         return view('client.pricing');
     }
+    public function SelectYourPack()
+    {
+        return view('client.selectyourpack');
+    }
     public function Contact()
     {
         return view('client.contact');
@@ -390,6 +421,15 @@ class ClientController extends Controller
     public function PrivacyStatement()
     {
         return view("client.privacy");
+    }
+
+    public function ReachUs()
+    {
+        return view("client.reachus");
+    }
+    public function Samples()
+    {
+        return view("client.sample");
     }
 
 

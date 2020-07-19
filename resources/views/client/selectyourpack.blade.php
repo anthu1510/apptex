@@ -14,7 +14,7 @@
     <section class="w3l-pricing1 py-5 mt-5">
         <div class="container py-lg-3 mt-3">
             <div class="heading text-center mx-auto">
-                <h3 class="head">Subscription Details </h3>
+                <h3 class="head">Please Select your pack to Subscribe</h3>
             </div>
             <div class="row">
                 <div class="col-md-4">
