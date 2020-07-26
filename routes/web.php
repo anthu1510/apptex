@@ -111,6 +111,7 @@ Route::post('newpassupdate', 'UserController@ResetPasswordUpdate');
         Route::post('buyer/deletecontact', 'BuyerController@DeleteContact');
         Route::post('buyer/supplierdetail', 'BuyerController@SupplierDetail');
         Route::post('buyer/deletesupplier', 'BuyerController@DeleteSupplier');
+        Route::post('buyer/bonusdate', 'BuyerController@BonusDate');
         Route::post('buyer/updatesave', 'BuyerController@UpdateSave');
         Route::post('buyer/validityextent', 'BuyerController@ValidityExtent');
 

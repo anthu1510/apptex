@@ -11,58 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f043efba-adfa-4925-8076-ea4b7ac0b070" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/argentina.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/australlia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/belgium.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/brazil.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/canada.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/chile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/colombia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/czechrepublic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/denmark.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/egypt.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/england.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/gambia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/germany.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/greece.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/hongkong.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/israel.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/italy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/jamaica.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/japan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/maurtis.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/netherland.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/newzealand.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/russia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/spain.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/srilanka.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/switzerland.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/client/images/uae.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/client/reachus.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/client/sample.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/client/selectyourpack.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/contact/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/contact/modal.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/supplier/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/supplier/modal.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/supplier/model-validity.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BuyerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BuyerController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/client/images/buyers-flags.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/client/images/buyers-flags.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/client/images/france.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/client/images/france.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/client/images/how-it-works.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/client/images/how-it-works.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/client/images/main.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/client/images/main.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/clientview.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/layouts/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/client/payamount.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/payamount.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/pricing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/pricing.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/signup.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/signup.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/node/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/node/list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/supplier/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/supplier/list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -243,7 +197,13 @@
       <workItem from="1594821363257" duration="6000" />
       <workItem from="1594879454263" duration="918000" />
       <workItem from="1594883835716" duration="477000" />
-      <workItem from="1595134921510" duration="19013000" />
+      <workItem from="1595134921510" duration="19159000" />
+      <workItem from="1595157227062" duration="3773000" />
+      <workItem from="1595224657049" duration="606000" />
+      <workItem from="1595339498339" duration="2245000" />
+      <workItem from="1595747547283" duration="4432000" />
+      <workItem from="1595768863068" duration="8000" />
+      <workItem from="1595768891516" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="SignUp form Created&#10;03-07-2020&#10;by&#10;Ravindran">
       <created>1593786568200</created>
@@ -301,7 +261,21 @@
       <option name="project" value="LOCAL" />
       <updated>1594882048130</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Final &#10;19-07-2020&#10;by&#10;Ravindran">
+      <created>1595156709107</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1595156709107</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Key modified&#10;19-07-2020&#10;by&#10;Ravindran">
+      <created>1595161812409</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1595161812409</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +325,9 @@
     <MESSAGE value="Final &#10;14-07-2020&#10;by&#10;Ravindran" />
     <MESSAGE value="Final &#10;15-07-2020&#10;by&#10;Ravindran" />
     <MESSAGE value="Final &#10;16-07-2020&#10;by&#10;Ravindran" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final &#10;16-07-2020&#10;by&#10;Ravindran" />
+    <MESSAGE value="Final &#10;19-07-2020&#10;by&#10;Ravindran" />
+    <MESSAGE value="Key modified&#10;19-07-2020&#10;by&#10;Ravindran" />
+    <option name="LAST_COMMIT_MESSAGE" value="Key modified&#10;19-07-2020&#10;by&#10;Ravindran" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="106" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593763250252">
@@ -367,10 +343,10 @@
       <screen x="0" y="27" width="1600" height="835" />
     </state>
     <state x="429" y="73" width="732" height="749" key="#phpunit.xml/0.27.1600.835@0.27.1600.835" timestamp="1593778645953" />
-    <state x="339" y="27" width="912" height="703" key="CommitChangelistDialog2" timestamp="1594882047842">
-      <screen x="0" y="27" width="1600" height="835" />
+    <state x="289" y="27" width="912" height="703" key="CommitChangelistDialog2" timestamp="1595161812209">
+      <screen x="0" y="27" width="1366" height="703" />
     </state>
-    <state x="289" y="27" width="912" height="703" key="CommitChangelistDialog2/0.27.1366.703@0.27.1366.703" timestamp="1594575866296" />
+    <state x="289" y="27" width="912" height="703" key="CommitChangelistDialog2/0.27.1366.703@0.27.1366.703" timestamp="1595161812209" />
     <state x="339" y="27" width="912" height="835" key="CommitChangelistDialog2/0.27.1600.835@0.27.1600.835" timestamp="1594882047842" />
     <state x="571" y="188" width="447" height="520" key="FileChooserDialogImpl" timestamp="1594805020247">
       <screen x="0" y="27" width="1600" height="835" />
@@ -412,10 +388,10 @@
       <screen x="0" y="27" width="1600" height="835" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.27.1600.835@0.27.1600.835" timestamp="1593606846739" />
-    <state x="395" y="180" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1594882059154">
-      <screen x="0" y="27" width="1600" height="835" />
+    <state x="337" y="156" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1595161827692">
+      <screen x="0" y="27" width="1366" height="703" />
     </state>
-    <state x="337" y="156" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.703@0.27.1366.703" timestamp="1594575915478" />
+    <state x="337" y="156" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.703@0.27.1366.703" timestamp="1595161827692" />
     <state x="395" y="180" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1600.835@0.27.1600.835" timestamp="1594882059154" />
     <state x="553" y="262" width="484" height="372" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1593780226665">
       <screen x="0" y="27" width="1600" height="835" />
@@ -434,10 +410,10 @@
     </state>
     <state x="350" y="27" width="762" height="703" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1366.703@0.27.1366.703" timestamp="1595144207106" />
     <state x="410" y="58" width="770" height="780" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1600.835@0.27.1600.835" timestamp="1594367705052" />
-    <state x="0" y="27" width="620" height="703" key="find.popup" timestamp="1594566806940">
+    <state x="0" y="27" width="620" height="703" key="find.popup" timestamp="1595747931100">
       <screen x="0" y="27" width="1366" height="703" />
     </state>
-    <state x="0" y="27" width="620" height="703" key="find.popup/0.27.1366.703@0.27.1366.703" timestamp="1594566806940" />
+    <state x="0" y="27" width="620" height="703" key="find.popup/0.27.1366.703@0.27.1366.703" timestamp="1595747931100" />
     <state x="464" y="197" key="run.anything.popup" timestamp="1594804808283">
       <screen x="0" y="27" width="1600" height="835" />
     </state>

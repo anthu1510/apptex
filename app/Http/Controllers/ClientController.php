@@ -138,8 +138,10 @@ class ClientController extends Controller
                     'amount' => $amount * 100,
                     'payment_capture' => 1,
                     'currency' => 'INR'
+
                 )
             );
+
 
             $razorpayOrderId = $order['id'];
             Session::put('razorpay_order_id', $razorpayOrderId);

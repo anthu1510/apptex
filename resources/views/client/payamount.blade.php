@@ -48,7 +48,7 @@
                         <p style="line-height: 150%; margin-top: 0; margin-bottom: 0" dir="ltr">
                         <font face="Arial" size="2"><font color="#484848">We suggest to
                         </font><font color="#B30000"><u>Transact using Credit/Debit Cards for at anytime.</u></font><br>
-                        <font color="#484848">Some <b>Banks</b> <b>NOT supports 
+                        <font color="#484848">Some <b>Banks</b> <b>NOT supports
                         Internet Banking after 6:00PM</b></font></font></p>
 
                         </ul>
@@ -66,15 +66,30 @@
                                     data-prefill.name="{{ $data['prefill']['name']}}"
                                     data-prefill.email="{{ $data['prefill']['email']}}"
                                     data-prefill.contact="{{ $data['prefill']['contact']}}"
-                                    data-notes.shopping_order_id="{{$data['notes']['merchant_order_id']}}"   {{--Our Order No--}}
-                                    data-order_id="{{$data['order_id']}}"                                       {{--Razorpay order No--}}
+                                    data-notes.shopping_order_id="{{$data['notes']['merchant_order_id']}}"   Our Order No
+                                    data-order_id="{{$data['order_id']}}"                                       Razorpay order No
+
                                     @if ($displayCurrency!== 'INR')
                                     data-display_amount="{{$data['display_amount']}}"
                                     data-display_currency="{{$data['display_currency']}}"
                                     @endif
+                          {{--          data-email="info@tradetech.co.in"
+                                    data-contact="9843153164"
+                                    data-method="wallet"
+                                    data-wallet="paypal"--}}
 
                                 >
                                 </script>
+                            {{--<script>
+                                razorpay.createPayment({
+                                    amount: 5000,
+                                    email: 'info@tradetech.co.in',
+                                    contact: '9843153164',
+                                    order_id: "{{$data['order_id']}}",
+                                    method: 'wallet',
+                                    wallet: 'paypal'
+                                });
+                            </script>--}}
                                 <!-- Any extra fields to be submitted with the form but not sent to Razorpay -->
                                 <input type="hidden" name="shopping_order_id" value="{{$data['order_id']}}">
                             </form>

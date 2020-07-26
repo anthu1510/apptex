@@ -56,14 +56,7 @@
                     { data: 'state'},
                     { data: 'country'},
                     { data: 'email'},
-                    { data: 'validity_date',
-                        render: function (data) {
-                            var bedget = 'badge badge-';
-
-                            return data.substring(0, 10);
-
-                        }
-                    },
+                    { data: 'validity_date'},
 
 
                     {
@@ -77,6 +70,10 @@
                             '<button id="btnvalidity" type="button" title="Validity Date" class="btn btn-success' +
                             ' btn-sm">' +
                             '<i class="fa fa-plus" aria-hidden="true"></i>' +
+                            '</button> &nbsp;'+
+                            '<button id="btnbonus" type="button" title="Bonus Date" class="btn btn-success' +
+                            ' btn-sm">' +
+                            '<i class="fa fa-gift" aria-hidden="true"></i>' +
                             '</button>'
 
 
@@ -110,10 +107,21 @@
                     current_row = current_row.prev();//If it is, then point to the row before it (its 'parent')
                 }
                 var data = table.row(current_row).data();//At this point, current_row refers to a valid row in the table, whether is a child row (collapsed by the DataTable's responsiveness) or a 'normal' row
-
-
                 //alert("OK btn clicked" + data.id);
                 ValidityExtent(data.id);
+
+
+            } );
+
+            $('#nodetable tbody').on( 'click', '#btnbonus', function () {
+                // var data = table.row($(this).parents('tr')).data();  // non responsive method
+                var current_row = $(this).parents('tr');//Get the current row
+                if (current_row.hasClass('child')) {//Check if the current row is a child row
+                    current_row = current_row.prev();//If it is, then point to the row before it (its 'parent')
+                }
+                var data = table.row(current_row).data();//At this point, current_row refers to a valid row in the table, whether is a child row (collapsed by the DataTable's responsiveness) or a 'normal' row
+                //alert("OK btn clicked" + data.id);
+                BonusDate(data.id,data.name);
 
 
             } );
@@ -184,6 +192,22 @@
         function validityExtends() {
 
             $('#validityModal').modal('show');
+        }
+
+
+        function BonusDate(id,name)
+        {
+            var con = confirm('Do you want to give bonus to ' + name +" ?");
+            if(con == true){
+                $.ajax({
+                    url: "{{ URL::to('dashboard/buyer/bonusdate') }}",
+                    type: "POST",
+                    data: {id: id, "_token": "{{ csrf_token() }}"},
+                    success: function (data) {
+                        window.location.reload();
+                    }
+                });
+            }
         }
 
     </script>

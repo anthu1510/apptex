@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
@@ -286,6 +287,26 @@ GROUP BY sup.id,
         $id = \request()->id;
         $res = DB::table('supplier')->where('id', $id)->delete();
         echo 1;
+    }
+    public function BonusDate()
+    {
+        $bonusdays=env('BONUS_DAYS');
+        $id = \request()->id;
+        $data=[
+            'validity_date'=>date_add(Carbon::now(),date_interval_create_from_date_string("$bonusdays days")),
+            'status'=>'active',
+
+        ];
+        $res = DB::table('supplier')->where('id', $id)->update($data);
+        if($res)
+        {
+            echo 1;
+        }
+        else
+        {
+            echo 0;
+        }
+
     }
 
     public function UpdateSave()
